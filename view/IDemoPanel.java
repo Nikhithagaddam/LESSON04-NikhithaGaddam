@@ -50,7 +50,7 @@ public class IDemoPanel {
         var v3 = new Bird(150, 150, "Eagle", 5, 10);
         pics.add(v3);
         v3.setImage(ImageStore.bird);
-        var v4 = new Dog(50, 150, "Bulldog", 3, "whitw");
+        var v4 = new Dog(50, 150, "Bulldog", 3, "white");
         pics.add(v4);
         v4.setImage(ImageStore.dog);
     }

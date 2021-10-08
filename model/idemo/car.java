@@ -1,6 +1,7 @@
 package model.idemo;
 
 import java.awt.Graphics2D;
+import java.awt.Color;
 
 public class car extends Vehicle {
 
@@ -28,5 +29,7 @@ public class car extends Vehicle {
     @Override
     public void render(Graphics2D g2) {
         g2.drawImage(getImage(), null, getX(), getY());
+        g2.setColor(Color.red);
+        g2.drawString("type"+type, getX(), getY());
     } 
 }
