@@ -17,4 +17,9 @@ public class car extends Vehicle {
     public String toString() {
         return "[car] "+ super.toString() + ", type =" + type;
     }
+
+    @Override
+    public String getSound() {
+        return "[car] vrrrr ~~~~ oooooooo m";
+    }
 }
