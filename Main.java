@@ -1,3 +1,4 @@
+
 import javax.swing.JFrame;
 
 import view.MenuScreen;
@@ -11,7 +12,6 @@ public class Main {
 
         var menu = new MenuScreen(window);
         menu.init();
-
         window.pack();
         window.setVisible(true);
     }
