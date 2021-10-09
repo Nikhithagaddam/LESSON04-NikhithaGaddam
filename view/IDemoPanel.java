@@ -41,6 +41,13 @@ public class IDemoPanel {
 
         IDemoEventListener listener = new IDemoEventListener(this);
         canvas.addMouseListener(listener);
+        canvas.addKeyListener(listener);
+        canvas.requestFocusInWindow();
+        canvas.setFocusable(true);
+
+        quitButton.setFocusable(false);
+
+        quitButton.addActionListener(listener);
     }
 
     private void populatePictures() {
@@ -61,5 +68,13 @@ public class IDemoPanel {
 
     public IDemoCanvas getCanvas() {
         return canvas;
+    }
+
+    public JButton getQuitButton() {
+        return quitButton;
+    }
+
+    public JFrame getWindow() {
+        return window;
     }
 }
